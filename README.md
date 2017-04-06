@@ -1,7 +1,7 @@
-#spring-boot-starter-dubbox
+spring-boot-starter-dubbox
 
-#配置示例
-```yml
+配置示例
+```
 #DUBBOX
 dubbox:
 	application:
