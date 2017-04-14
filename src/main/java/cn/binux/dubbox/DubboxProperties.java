@@ -77,6 +77,7 @@ public class DubboxProperties {
      */
     protected ArgumentConfig argument;
 
+
     public ServiceConfig getService() {
         return service;
     }

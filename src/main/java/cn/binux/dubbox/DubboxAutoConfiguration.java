@@ -30,7 +30,7 @@ public class DubboxAutoConfiguration {
     private DubboxProperties dubboxProperties;
 
     @Bean
-    public static AnnotationBean annotationBean(@Value("${dubbox.annotation.package}") String packageName) {
+    public static AnnotationBean annotationBean(@Value("${dubbox.annotation.package:#{null}}") String packageName) {
 
         AnnotationBean annotationBean = new AnnotationBean();
 
@@ -99,13 +99,13 @@ public class DubboxAutoConfiguration {
         return dubboxProperties.getRegistry();
     }
 
-    @Bean
-    public MonitorConfig monitorConfig() {
-
-        logger.info("DubboxAutoConfiguration.monitorConfig ---> " + dubboxProperties.getMonitor());
-
-        return dubboxProperties.getMonitor();
-    }
+    //@Bean
+    //public MonitorConfig monitorConfig() {
+    //
+    //    logger.info("DubboxAutoConfiguration.monitorConfig ---> " + dubboxProperties.getMonitor());
+    //
+    //    return dubboxProperties.getMonitor();
+    //}
 
     @Bean
     public ProviderConfig providerConfig(ApplicationConfig applicationConfig,

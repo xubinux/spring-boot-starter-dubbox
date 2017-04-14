@@ -49,6 +49,7 @@
 	</dependencies>
 
 	<!-- 配置maven地址 -->
+	<!-- 配置maven地址 -->
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
