@@ -23,9 +23,15 @@ dubbox:
 		accepts: 1000
 		serialization: kryo
 		optimizer: cn.binux.serial.SerializationOptimizerImpl
+    monitor:
+    	enabled: false  # true 开启 false 关闭
+    	address: 192.168.125.1:6060
+    	username: admin
+    	password: admin
 ```
 
 查看[dubbo全部配置](http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-Xml配置)
+
 
 基本全部配置都可以配置
 

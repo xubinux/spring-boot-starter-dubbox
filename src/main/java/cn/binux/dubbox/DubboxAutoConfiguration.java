@@ -99,14 +99,6 @@ public class DubboxAutoConfiguration {
         return dubboxProperties.getRegistry();
     }
 
-    //@Bean
-    //public MonitorConfig monitorConfig() {
-    //
-    //    logger.info("DubboxAutoConfiguration.monitorConfig ---> " + dubboxProperties.getMonitor());
-    //
-    //    return dubboxProperties.getMonitor();
-    //}
-
     @Bean
     public ProviderConfig providerConfig(ApplicationConfig applicationConfig,
                                          RegistryConfig registryConfig,
